@@ -1,0 +1,16 @@
+{
+  "name": "projetoback",
+  "version": "1.0.0",
+  "description": "Projeto de backend iniciado 17/03",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "Ygor",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
