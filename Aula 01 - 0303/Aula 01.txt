@@ -1,0 +1,92 @@
+Aula 01 - 0303
+
+1. console.log();
+
+function calcularAreaRetangulo(altura, largura) {
+    let area = altura * largura;
+    return area;
+  }
+
+  let altura = Math.floor(Math.random() * 100);
+  let largura = Math.floor(Math.random() * 100);
+  let area = calcularAreaRetangulo(altura, largura);
+  console.log('A área do retângulo é:', area);
+
+2. console.clear();
+const real = Math.floor(Math.random() * 100); 
+//math.floor arredonda valores
+const dolar = real / 5.17;
+const euro = real / 6.14;
+const peso = real / 0.05;
+
+//concatenação de strings
+console.log("Valor em real: " + real);
+
+//interpolação de strings
+console.log(`Valor em dólar: ${dolar}`);
+console.log(`Valor em euro: ${euro}`);
+console.log(`Valor em peso: ${peso}`);
+
+3. console.log();
+
+let num1 = Math.floor(Math.random() * 100);
+let num2 = Math.floor(Math.random() * 100);
+
+
+let maior, menor;
+  if (num1 > num2) {
+      maior = num1;
+      menor = num2;
+} 
+  else {
+      maior = num2;
+      menor = num1;
+}
+
+console.log("O número maior é: " + maior);
+console.log("O número menor é: " + menor);
+
+4. console.clear();
+
+let idade = Math.floor(Math.random() * 100);
+
+if (idade <= 13) {
+    console.log("Criança Encapetada!");
+} else 
+    if (idade <= 18) {
+    console.log("Adolescente com Tédio!");
+} else 
+    if (idade <= 60) {
+    console.log("Adulto Chato!");
+} else {
+    console.log("Idoso Insuportavel!");
+}
+
+5. console.log();
+
+let valorMaximo = 15;
+
+let num1 = 0;
+let num2 = 1;
+
+console.log(num1);
+
+while (num2 <= valorMaximo) {
+  console.log(num2);
+  let num3 = num1 + num2;
+  num1 = num2;
+  num2 = num3;
+}
+
+6. console.log();
+
+const tamanhoVetor = 1000;
+
+let vetor = [];
+for (let i = 0; i < tamanhoVetor; i++) {
+  vetor.push(Math.floor(Math.random() * 1000));
+}
+
+vetor.sort((a, b) => a - b);
+
+console.log(vetor);
